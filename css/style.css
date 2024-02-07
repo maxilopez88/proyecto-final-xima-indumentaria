@@ -1,5 +1,5 @@
 
-/*reset*/
+/*reset*
 *{
     margin: 0;
     padding: 0;
@@ -24,10 +24,9 @@ p{
     font-family: 'Anton', sans-serif;
     text-align: center;
 }
-#derechos{
-    color: black;
-    background-color: aquamarine;
-}
+*/
+
+/*   header 
 .menu{
     flex-grow: 0;
 }
@@ -52,7 +51,7 @@ p{
 .nav-link:hover{
     color:aquamarine;
 }
-
+*/
 
 @media screen and (max-width: 991px){
     .menu{
@@ -65,6 +64,34 @@ p{
     }
 }
 
+/*footer*
+
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#derechos{
+    color: black;
+    background-color: aquamarine;
+}
+
+.logodewhatsapp{
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+}
+
+.imagenwhatsapp{
+    width: 50px;
+    height: 50px;
+}
+*/
+
+
+
+
 
 /*header{
     background-color: coral;
@@ -76,25 +103,16 @@ header nav ul{
 header nav ul li a{
     color: greenyellow;
 }*/
-.logodewhatsapp{
-    position: fixed;
-    bottom: 5px;
-    right: 10px;
-}
 
-.imagenwhatsapp{
-    width: 50px;
-    height: 50px;
-}
 
-.flexcontainer{
+
+/* pagina articulos*/
+
+.flexcontainer_articulos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-
-
 
 .imagen-articulos{
     width: 350px;
@@ -130,7 +148,7 @@ header nav ul li a{
     object-fit: cover;
 }*/
 
-
+/* guia de talles y politicas de cambio*/
 .bannerinformativos{
     display: grid;
     width: 100%;
@@ -138,6 +156,7 @@ header nav ul li a{
     object-fit: cover;
 }
 
+/* pagina contacto*/
 .display-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 8fr;
