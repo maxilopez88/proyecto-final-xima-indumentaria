@@ -1,5 +1,5 @@
 
-/*reset*
+/*reset*/
 *{
     margin: 0;
     padding: 0;
@@ -10,203 +10,188 @@ html{
     font-family: 'Anton', sans-serif;
 }
 h1{
-    color:black;
-    background-color:  aquamarine;
+    color:azure;
+    background-color:  rgb(132, 238, 84);
     text-align: center;
 }
 
 h2{
+    background-color: rgb(138, 206, 71);
+    color:azure;
+    text-align: center;
+}
+
+h3{
+    color: chartreuse;
     text-align: center;
 }
 
 p{
-    color: black;
+    color:darkgrey;
     font-family: 'Anton', sans-serif;
     text-align: center;
 }
-*/
 
-/*   header 
-.menu{
-    flex-grow: 0;
+/*header*/
+
+/*Index*/
+
+.seccion-texto-index{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.main-index .seccion-texto-index div p{
+    font-size: 40px;
+    display: flex;
 }
 
-
-.menu-button{
-    border: 0;
-}
-
-.menu-button:focus{
-    box-shadow: none;
-}
-
-.menu-ul{
-    align-items: center;
-}
-
-.nav-link{
-    font-size: 20px;
-}
-
-.nav-link:hover{
-    color:aquamarine;
-}
-*/
-
-@media screen and (max-width: 991px){
-    .menu{
-    position: absolute;
-    top: 150px;
-    z-index: 2;
-    background-color:#f8f9fa ;
-    width: 100vm;
-    align-items:first baseline;
+/* media cuori tablet*/
+@media screen and ( max-width: 1024px){
+    .main-index .seccion-texto-index div p{
+        font-size: 30px;
     }
 }
 
-/*footer*
+/* media cuori mobile*/
+@media screen and ( max-width: 768px){
+    .main-index .seccion-texto-index div p{
+        font-size: 20px;
+    }
+}
 
-.flexcontainer{
+
+/*pagina articulos flex-box*/
+.flexcontainer-articulos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#derechos{
-    color: black;
-    background-color: aquamarine;
-}
-
-.logodewhatsapp{
-    position: fixed;
-    bottom: 5px;
-    right: 10px;
-}
-
-.imagenwhatsapp{
-    width: 50px;
-    height: 50px;
-}
-*/
-
-
-
-
-
-/*header{
-    background-color: coral;
-}
-header nav ul{
-    list-style: none;
-    font-size: 20px;
-}
-header nav ul li a{
-    color: greenyellow;
-}*/
-
-
-
-/* pagina articulos*/
-
-.flexcontainer_articulos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .imagen-articulos{
-    width: 350px;
-    height: 480px;
-    background-color: aquamarine;
-    border-radius: 20px 0px;
-    text-align: justify;
-    overflow-block:auto;
+    width: 750px;
+    align-self:center;
+    border-radius: 10px; border-style: solid; color: darkgrey;
+    overflow: hidden;
+    box-shadow: 17px 21px 37px 22px rgba(214,206,206,1);
 }
 
-.imagen-articulos img{
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
+.imagen-articulos h3{
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
-.imagen-articulos .imagen-texto{
+.imagen-articulos img {
+    display: flex;
+    width: 750px;
+}
+
+.imagen-articulos .texto-articulos{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    height:100px;
 }
 
-/*.articulos{
-    width: 150;
-    height: 300;
+/*pagina guia de talles flexbox*/
+.guia-de-talles-container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    object-fit: cover;
-}*/
-
-/* guia de talles y politicas de cambio*/
-.bannerinformativos{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* pagina contacto*/
-.display-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 8fr;
-    grid-template-rows: 20px 20px 500px;
-}
-
-
-
-
-
-/*.navegacion{
-    display: flex;
-    justify-content:first baseline;
-    align-items: end;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.menunavegable{
+.seccion-guia-de-talles div img{
     display: flex;
-    column-gap: 10px;
-    flex-direction: row;
-    justify-content:right;
-}
-
-
-
-
-*@media screen and (max-width: 1024px) {
-    .navegacion {flex-direction: column;}
-    .menunavegable{flex-direction:row-reverse;}
-}
-
-@media screen and (max-width: 768px) {
-    .navegacion {flex-direction: column;
-    justify-content: center;
-align-items: center;}
-    .menunavegable{flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100%;
+    object-fit: cover;
 }
+
+.seccion-guia-de-talles div p{
+    background-color: rgb(138, 206, 71);
+    font-size: 50px;
+    color: black;
+}
+
+/*Pagina Politicas de cambios*/
+
+.grid-container-cambios{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    gap: 10px;
 }
 
 
 
+.grid-container-cambios .area-1{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.grid-container-cambios .area-2{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.grid-container-cambios .area-3{
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.grid-container-cambios .area-4{
+    grid-column: 4/5;
+    grid-row: 1;
+}
+
+.seccion-cambios{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+section .banner-cambios img{
+    align-items: center;
+    justify-items: center;
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/*pagina contacto*/
 
 
 
 
+/*footer*/
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+footer section a img{ /* logos Faceebook e Instagram*/
+    width: 50px;
+    height: 50px;
+}
 
+.footer-whatsapp{
+    position: fixed;
+    bottom: 50px;
+}
 
-
+footer section div a img{/* logo de whatsapp*/
+    width: 60px;
+    height: 60px;
+    right: 0px;
+    position: fixed;
+}
