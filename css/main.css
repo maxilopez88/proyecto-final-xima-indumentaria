@@ -1,3 +1,56 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/*Estilos globales*/
+html {
+  font-family: "Anton", sans-serif;
+}
+
+h1 {
+  color: azure;
+  background-color: rgb(132, 238, 84);
+  text-align: center;
+}
+
+h2 {
+  background-color: rgb(138, 206, 71);
+  color: azure;
+  text-align: center;
+}
+
+h3 {
+  color: chartreuse;
+  text-align: center;
+}
+
+p {
+  color: darkgrey;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+
+/* header*/
+header nav .container-fluid .menu {
+  flex-grow: 0;
+}
+header nav .container-fluid .menu-button {
+  border: 0;
+}
+header nav .container-fluid .menu-button:focus {
+  box-shadow: none;
+}
+header nav .navbarSupportedContent .menu-ul {
+  align-items: center;
+}
+header nav .navbarSupportedContent .nav-link {
+  font-size: 20px;
+}
+header nav .navbarSupportedContent .nav-link:hover {
+  color: aquamarine;
+}
 
 /*# sourceMappingURL=main.css.map */
