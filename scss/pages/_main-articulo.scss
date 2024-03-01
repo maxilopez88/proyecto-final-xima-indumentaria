@@ -1,0 +1,31 @@
+/*main de articulos*/
+.main-articulos{
+    section{
+        .flexcontainer-articulos{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .imagen-articulos{
+                width: 750px;
+                align-self:center;
+                border-radius: 10px; border-style: solid; color: darkgrey;
+                overflow: hidden;
+                box-shadow: 17px 21px 37px 22px rgba(214,206,206,1);
+                img{
+                    display: flex;
+                    width: 750px;
+                }
+                .texto-articulos{
+                    h3{
+                        text-decoration: underline;
+                        font-weight: bolder;
+                    }
+                }
+            }
+            }
+        }
+    }

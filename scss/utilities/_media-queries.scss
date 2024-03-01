@@ -1,0 +1,13 @@
+/* media cuori tablet*/
+@media screen and ( max-width: 1024px){
+    .main-index .seccion-texto-index div p{
+        font-size: 30px;
+    }
+}
+
+/* media cuori mobile*/
+@media screen and ( max-width: 768px){
+    .main-index .seccion-texto-index div p{
+        font-size: 20px;
+    }
+}

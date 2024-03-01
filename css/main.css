@@ -33,6 +33,136 @@ p {
   text-align: center;
 }
 
+/* Estilos main-index*/
+.main-index .seccion-texto-index {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.main-index .seccion-texto-index div p {
+  font-size: 40px;
+  display: flex;
+}
 
+/*main de articulos*/
+.main-articulos section .flexcontainer-articulos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-articulos section .flexcontainer-articulos .imagen-articulos {
+  width: 750px;
+  align-self: center;
+  border-radius: 10px;
+  border-style: solid;
+  color: darkgrey;
+  overflow: hidden;
+  box-shadow: 17px 21px 37px 22px rgb(214, 206, 206);
+}
+.main-articulos section .flexcontainer-articulos .imagen-articulos img {
+  display: flex;
+  width: 750px;
+}
+.main-articulos section .flexcontainer-articulos .imagen-articulos .texto-articulos h3 {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/*main talles*/
+.main-talles .seccion-guia-de-talles .guia-de-talles-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main-talles .seccion-guia-de-talles .guia-de-talles-container img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+}
+.main-talles .seccion-guia-de-talles .div h2 {
+  background-color: rgb(138, 206, 71);
+  font-size: 50px;
+  color: black;
+}
+
+/*main cambios*/
+.main-cambios section .grid-container-cambios {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  gap: 10px;
+}
+.main-cambios section .grid-container-cambios area-1 {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.main-cambios section .grid-container-cambios area-2 {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.main-cambios section .grid-container-cambios area-3 {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+.main-cambios section .grid-container-cambios area-4 {
+  grid-column: 4/5;
+  grid-row: 1;
+}
+.main-cambios .seccion-cambios {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.main-cambios .seccion-cambios .banner-cambios img {
+  align-items: center;
+  justify-items: center;
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/*footer*/
+footer .footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer .footer-container a img {
+  width: 50px;
+  height: 50px;
+}
+footer .footer-whatsapp {
+  position: fixed;
+  bottom: 50px;
+}
+footer .footer-whatsapp div a img {
+  width: 60px;
+  height: 60px;
+  right: 0px;
+  position: fixed;
+}
+
+/* media cuori tablet*/
+@media screen and (max-width: 1024px) {
+  .main-index .seccion-texto-index div p {
+    font-size: 30px;
+  }
+}
+/* media cuori mobile*/
+@media screen and (max-width: 768px) {
+  .main-index .seccion-texto-index div p {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

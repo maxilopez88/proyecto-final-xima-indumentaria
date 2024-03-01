@@ -1,0 +1,15 @@
+/* Estilos main-index*/
+.main-index{
+    .seccion-texto-index{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        div{
+            p{
+                font-size: 40px;
+                display: flex;
+            }
+        }
+    }
+}
